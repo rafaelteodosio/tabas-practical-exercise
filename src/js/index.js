@@ -7,22 +7,23 @@ function submitForm() {
   //
 
   //PUSH FORM VALUES INTO AN ARRAY
-  var allItens = [];
-  allItens.push(text, select, checkbox, date);
+  var allItems = [];
+  allItems.push(text, select, checkbox, date);
   //
 
   //CREATING HTML ELEMENTS
   var listDiv = document.createElement("div");
-  var listItem = document.createElement("li");
+  var listItem = document.createElement("p");
   var currentList = document.getElementById("itemlist");
   //
 
   //APPENDING THE FORM VALUES INTO THE LIST
-  for (const item of allItens) {
-    listItem = document.createElement("li");
+  for (const item of allItems) {
+    listItem = document.createElement("p");
     listItem.innerText = item;
     listDiv.append(listItem);
   }
+  listDiv.setAttribute("class", "line");
   currentList.appendChild(listDiv);
   //
 
