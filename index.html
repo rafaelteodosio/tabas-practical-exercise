@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="./src/js/index.js" type="text/javascript" charset="UTF-8"></script>
@@ -40,18 +39,12 @@
     
         <div class="home_background">
             <div class="container">
-                <div class="text">
-                    <h5>PROPERTY OWNER - CITY OF SÃO PAULO</h5>
-                    <h1>Renovate your property, relax and collect rent</h1>
-                    <h3>We will rent it from you, renovate and transform it into a beautifully designed and fully furnished apartment.</h3>
-                </div>
-    
                 <div>
                     <form onsubmit="return submitForm()" class="form">
                         <h4>PARTNER WITH US IN SÃO PAULO</h4>
                         <div class="column margin">
                             <label>Text Input</label>
-                            <input id ='textID' type="text" placeholder="Text Area">
+                            <input required id ='textID' type="text" placeholder="Text Area">
                         </div>
                         <div class="margin">
                             <select id="selectID">
@@ -67,22 +60,23 @@
                             </label>
                         </div>
                         <div class="column margin">
-                            <label for="birthday">Birthday:</label>
-                            <input type="date" id="dateID" name="birthday">
+                            <label for="date">Date:</label>
+                            <input required type="date" id="dateID" name="date" value="YYYY-MM-DD">
                         </div>
                         <div class="button_margin">
                             <button type="submit">Submit</button>
                         </div>
                     </form>     
                 </div>
-            </div>
+                <div class="listitems">
+                    <ul id="itemlist">
+                    <!-- LIST OF SUBMITED ITEMS -->
+                    </ul>
+                </div>
+            </div>    
         </div>
-        <div>
-            <ul id="itemlist" class="list-group">
-    
-            </ul>
-        </div>
-    </main>
-</body>
 
+    </main>
+
+</body>
 </html>
