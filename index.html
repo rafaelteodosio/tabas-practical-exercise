@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./src/js/index.js" type="text/javascript" charset="UTF-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <title>Tabas</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="topnav">
+                <a>
+                    <img src="./src/img/logo.png" alt="logo_tabas"/>
+                </a>
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Property Owner</a></li>
+                    <li><a href="">Corporate</a></li>
+                    <li>
+                        <a href="">
+                            <img src="./src/img/world.png" alt="world_language">
+                        </a>
+                    </li>
+                    <li><a href="">Support</a></li>
+                    <li class="border"></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="home_background">
+            <div class="container">
+                <div class="text">
+                    <h5>PROPERTY OWNER - CITY OF SÃO PAULO</h5>
+                    <h1>Renovate your property, relax and collect rent</h1>
+                    <h3>We will rent it from you, renovate and transform it into a beautifully designed and fully furnished apartment.</h3>
+                </div>
+    
+                <div>
+                    <form onsubmit="return submitForm()" class="form">
+                        <h4>PARTNER WITH US IN SÃO PAULO</h4>
+                        <div class="column margin">
+                            <label>Text Input</label>
+                            <input id ='textID' type="text" placeholder="Text Area">
+                        </div>
+                        <div class="margin">
+                            <select id="selectID">
+                                <option>Default select</option>
+                                <option>Second</option>
+                                <option>Third</option>
+                            </select>
+                        </div>
+                        <div class="margin">
+                            <input type="checkbox" value="" id="checkboxID">
+                            <label>
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="column margin">
+                            <label for="birthday">Birthday:</label>
+                            <input type="date" id="dateID" name="birthday">
+                        </div>
+                        <div class="button_margin">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>     
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul id="itemlist" class="list-group">
+    
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
