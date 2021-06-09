@@ -6,40 +6,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="./src/js/index.js" type="text/javascript" charset="UTF-8"></script>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <title>Tabas</title>
 </head>
 
 <body>
     <div>
-        <form>
-            <div class="form-group">
+        <form onsubmit="return submitForm()">
+            <div>
                 <div>
                     <label>Text Input</label>
-                    <input type="text" class="form-control" placeholder="Text Area">
+                    <input id ='textID' type="text" placeholder="Text Area">
                 </div>
                 <div>
-                    <select class="form-control">
+                    <select id="selectID">
                         <option>Default select</option>
+                        <option>Second</option>
+                        <option>Third</option>
                     </select>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                <div>
+                    <input type="checkbox" value="" id="checkboxID">
+                    <label>
                         Default checkbox
                     </label>
                 </div>
                 <div>
                     <label for="birthday">Birthday:</label>
-                    <input type="date" id="birthday" name="birthday">
+                    <input type="date" id="dateID" name="birthday">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit">Submit</button>
         </form>
+    </div>
+    <div>
+        <ul id="itemlist" class="list-group">
+
+        </ul>
     </div>
 </body>
 
