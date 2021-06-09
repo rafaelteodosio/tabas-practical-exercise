@@ -28,4 +28,5 @@ function submitForm() {
 
   //PREVENT THE SUBMITION
   return false;
+  //
 }
