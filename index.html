@@ -5,78 +5,119 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="./src/js/index.js" type="text/javascript" charset="UTF-8"></script>
-
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
     <title>Tabas</title>
 </head>
+
 
 <body>
     <main>
         <header>
-            <nav class="topnav">
-                <a>
-                    <img src="./src/img/logo.png" alt="logo_tabas"/>
-                </a>
-                <ul>
-                    <li><a href="" class="active">Home</a></li>
-                    <li><a href="">Property Owner</a></li>
-                    <li><a href="">Corporate</a></li>
-                    <li>
-                        <a href="">
-                            <img src="./src/img/world.png" alt="world_language">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid" >
+                    <div class="img-nav">
+                        <a class="navbar-brand" href="#">
+                            <img src="./src/img/logo.png" alt="logo_tabas" width="" height="">
                         </a>
-                    </li>
-                    <li><a href="">Support</a></li>
-                    <li class="border"></li>
-                    <li><a href="">Log In</a></li>
-                    <li><a href="">Sign Up</a></li>
-                </ul>
+                    </div>
+              
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              
+                    <div class="collapse navbar-collapse nav-margin" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Property Owner</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Corporate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="./src/img/world.png" alt="world_language">
+                                </a>
+                            </li>
+                            <li class="nav-item orange-border d-flex align-self-center"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Help Topics</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">+55 11 3230 3196</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">+55 11 4632 2155</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item orange-border d-flex align-self-center"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link orange-sign" href="#">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
     
-        <div class="home_background">
-            <div class="container">
-                <div>
-                    <form onsubmit="return submitForm()" class="form">
-                        <h4>PARTNER WITH US IN SÃO PAULO</h4>
-                        <div class="column margin">
-                            <label>Text Input</label>
-                            <input required id ='textID' type="text" placeholder="Text Area">
+        <div class="container-fluid home-background">
+            <div class="container h-100 d-flex">
+                <div class="row align-items-center w-100">
+                    <div class="col-lg-6 responsive-top">
+                        <form onsubmit="return submitForm()">
+                            <h4>PARTNER WITH US IN SÃO PAULO</h4>
+        
+                            <div class="mb-3 mt-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Text Input</label>
+                                <input required id="textID" class="form-control" placeholder="Text Area"></input>
+                              </div>
+        
+                              <select id="selectID" class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Default select</option>
+                                <option>One</option>
+                                <option>Two</option>
+                                <option>Three</option>
+                              </select>
+        
+                              <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="checkboxID">
+                                <label class="form-check-label" for="checkboxID">
+                                  Default checkbox
+                                </label>
+                              </div>
+        
+                              <div class="mb-3">
+                                <label class="form-label" for="date">Date:</label>
+                                <input class="form-control" required type="date" id="dateID" name="date" value="yyyy-MM-dd">
+                              </div>
+        
+                              <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                              </div>
+                        </form>     
+                    </div>
+    
+                    <div class="col-lg-6">
+                        <div class="listitems">
+                            <ul id="itemlist">
+                            <!-- LIST OF SUBMITED ITEMS -->
+                            </ul>
                         </div>
-                        <div class="margin">
-                            <select id="selectID">
-                                <option>Default select</option>
-                                <option>Second</option>
-                                <option>Third</option>
-                            </select>
-                        </div>
-                        <div class="margin">
-                            <input type="checkbox" value="" id="checkboxID">
-                            <label>
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="column margin">
-                            <label for="date">Date:</label>
-                            <input required type="date" id="dateID" name="date" value="YYYY-MM-DD">
-                        </div>
-                        <div class="button_margin">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>     
+                    </div>   
                 </div>
-                <div class="listitems">
-                    <ul id="itemlist">
-                    <!-- LIST OF SUBMITED ITEMS -->
-                    </ul>
-                </div>
-            </div>    
+            </div>
         </div>
 
     </main>
-
 </body>
 </html>
